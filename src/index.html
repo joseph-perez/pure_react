@@ -7,12 +7,18 @@
   <title>Pure React</title>
 </head>
 <body>
+  <!-- 
+    React is a JavaScript library.
+    You can use as little or as much of React as you want. React has been designed from the start for gradual adoption.
+  -->
+
+
   <!-- root is where the react app will be rendered -->
   <div id="root">not rendered</div>
 
   <!-- React is split into two parts.-->
 
-  <!-- The first is the react package which is the API.  -->
+  <!-- The first is the React library which is the API.  -->
   <script src="https://unpkg.com/react@17.0.1/umd/react.development.js"></script>
 
   <!--
@@ -22,6 +28,12 @@
   <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.development.js"></script>
 
   <script>
+    // React createElement takes in three arguments. Type, props, and children.
+    // The type argument can be either a tag name string like an h1, div, span, etc.
+    // A React component or a React fragment.
+    // A React fragment lets you return multiple elements in a render method without creating an additional DOM element.
+
+
     const App = () => React.createElement('h1', {}, 'This is a pure react app! :)');
 
     ReactDOM.render(React.createElement(App), document.getElementById('root'));
