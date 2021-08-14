@@ -1,0 +1,14 @@
+{
+  "name": "stage_4",
+  "version": "1.0.0",
+  "description": "A pure react app. No compile step. No babel. No parcel. No webpack. No JSX.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js, jsx}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
